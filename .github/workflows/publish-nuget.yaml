@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - master
-    tags:
-      - 'v*' # Trigger only on version tags (e.g., v1.0.0)
+    paths:
+      - '**/*.csproj'
 
 jobs:
   build:
