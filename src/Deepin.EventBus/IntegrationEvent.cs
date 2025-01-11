@@ -1,6 +1,6 @@
 ﻿namespace Deepin.EventBus;
 
-public abstract class IntegrationEvent
+public abstract record IntegrationEvent
 {
     public IntegrationEvent()
     {
