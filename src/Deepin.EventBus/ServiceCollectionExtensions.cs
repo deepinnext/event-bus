@@ -15,7 +15,6 @@ public static class ServiceCollectionExtensions
                 cfg.ConfigureEndpoints(ctx);
             });
         });
-        services.AddMassTransitHostedService(true);
         return services;
     }
 }
