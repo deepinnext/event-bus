@@ -13,7 +13,7 @@ public static class ServiceCollectionExtensions
             config.AddConsumers(assembly);
             config.UsingRabbitMq((ctx, mq) =>
             {
-                mq.Host(mqConfig.Host, mqConfig.VirtualHost, h =>
+                mq.Host(mqConfig.Host, mqConfig.Port, mqConfig.VirtualHost, h =>
                 {
                     h.Username(mqConfig.Username);
                     h.Password(mqConfig.Password);
